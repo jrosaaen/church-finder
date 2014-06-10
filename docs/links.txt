@@ -1,0 +1,15 @@
+http://devcenter.heroku.com/articles/ruby
+http://devcenter.heroku.com/articles/cron
+http://devcenter.heroku.com/articles/queueing
+http://devcenter.heroku.com/articles/procfile
+http://devcenter.heroku.com/articles/rack
+http://michaelvanrooijen.com/articles/2011/06/01-more-concurrency-on-a-single-heroku-dyno-with-the-new-celadon-cedar-stack/
+http://www.sinatrarb.com/intro
+http://munkymorgy.blogspot.com/2010/02/sinatra-layouts-vs-templates.html
+http://stackoverflow.com/questions/2239240/use-rackcommonlogger-in-sinatra
+
+Boilerplate:
+http://railsapps.github.com/rails-html5-boilerplate.html
+
+Google CDN:
+http://code.google.com/apis/libraries/devguide.html
