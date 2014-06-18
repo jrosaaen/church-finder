@@ -12,3 +12,5 @@ Inspiration came from being a DBC student with little time to research churches 
 This app will be continually worked on until it fulfills its duty or I am happy with it...then I most likely will deploy it to production
 
 The purpose behind this is to highlight the skills I have learned while at DBC. This is by no mean a complete
+
+I am not finished with the project...may want ot look at it later...right now having a prbolem cleaning up messy git history and struggling to get a pull reguest because of diffement commit history
