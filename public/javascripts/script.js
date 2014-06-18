@@ -8,7 +8,7 @@ function initialize() {
     geocoder = new google.maps.Geocoder();
 
     // set initial position (New York)
-    var myLatlng = new google.maps.LatLng(40.7143528,-74.0059731);
+    var myLatlng = new google.maps.LatLng(37.7250, -122.1561);
 
     var myOptions = { // default map options
         zoom: 14,
@@ -45,7 +45,9 @@ function findAddress() {
     var address = document.getElementById("gmap_where").value;
 
     // script uses our 'geocoder' in order to find location by address name
-    geocoder.geocode( { 'address': address}, function(results, status) {
+    geocoder.geocode({
+        'address': address
+    }, function(results, status) {
         if (status == google.maps.GeocoderStatus.OK) { // and, if everything is ok
 
             // we will center map
@@ -125,14 +127,14 @@ function createMarker(obj) {
 
     // prepare info window
     var infowindow = new google.maps.InfoWindow({
-        content: '<img src="' + obj.icon + '" /><font style="color:#000;">' + obj.name + 
-        '<br />Rating: ' + obj.rating + '<br />Vicinity: ' + obj.vicinity + '</font>'
+        content: '<img src="' + obj.icon + '" /><font style="color:#000;">' + obj.name +
+            '<br />Rating: ' + obj.rating + '<br />Vicinity: ' + obj.vicinity + '</font>'
     });
 
     // add event handler to current marker
     google.maps.event.addListener(mark, 'click', function() {
         clearInfos();
-        infowindow.open(map,mark);
+        infowindow.open(map, mark);
     });
     infos.push(infowindow);
 }
