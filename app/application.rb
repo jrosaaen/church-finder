@@ -13,3 +13,6 @@ end
 error 500 do
   erb :http_500, :layout => false
 end
+
+
+# ok cant even speelshit right now...eating and crashing...surger is dropped off
