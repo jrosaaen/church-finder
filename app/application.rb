@@ -15,4 +15,3 @@ error 500 do
 end
 
 
-# ok cant even speelshit right now...eating and crashing...surger is dropped off

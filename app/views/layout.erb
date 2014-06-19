@@ -9,8 +9,7 @@
     <script src="/javascripts/modernizr-2.0.6.min.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&amp;sensor=false"></script>
-    <script src="javascripts/script.js"></script>
-  </head>
+    <script src="javascripts/script.js"></script></head>
   <body>
     <div id="header-container">
       <header class="wrapper">
@@ -25,38 +24,35 @@
         <div id="gmap_canvas"></div>
         <div class="actions">
             <div class="button">
-                <label for="gmap_where">Where:</label>
+                <label for="gmap_where">Zipcode</label>
                 <input id="gmap_where" type="text" name="gmap_where" /></div>
-            <div id="button2" class="button" onclick="findAddress(); return false;">Search for address</div>
+            <div id="button2" class="button" onclick="findAddress(); return false;">Search for all in Zipcode</div>
             <div class="button">
                 <label for="gmap_keyword">Keyword (optional):</label>
                 <input id="gmap_keyword" type="text" name="gmap_keyword" /></div>
             <div class="button">
-                <label for="gmap_type">Type:</label>
+              <!-- church,mosque,hindu_temple,place_of_worship,synagogue -->
+                <label for="gmap_type">Type to find on Google</label>
                 <select id="gmap_type">
-                    <option value="art_gallery">art_gallery</option>
-                    <option value="atm">atm</option>
-                    <option value="bank">bank</option>
-                    <option value="bar">bar</option>
-                    <option value="cafe">cafe</option>
-                    <option value="food">food</option>
-                    <option value="hospital">hospital</option>
-                    <option value="police">police</option>
-                    <option value="store">store</option>
+                    <option value="church">Church</option>
+                    <option value="place_of_worship">Place of Worship</option>
+                    <option value="synagogue">Synagogue</option>
+                    <option value="hindu_temple">Hindu Temple</option>
+                    <option value="mosque">Mosque</option>
                 </select>
             </div>
             <div class="button">
                 <label for="gmap_radius">Radius:</label>
                 <select id="gmap_radius">
-                    <option value="500">500</option>
-                    <option value="1000">1000</option>
-                    <option value="1500">1500</option>
-                    <option value="5000">5000</option>
+                    <option value="1 mile">1 mile</option>
+                    <option value="5 miles">5 miles</option>
+                    <option value="10 miles">10 miles</option>
+                    <option value="20 miles">20 miles</option>
                 </select>
             </div>
             <input type="hidden" id="lat" name="lat" value="40.7143528" />
             <input type="hidden" id="lng" name="lng" value="-74.0059731" />
-            <div id="button1" class="button" onclick="findPlaces(); return false;">Search for objects</div></div>
+            <div id="button1" class="button" onclick="findPlaces(); return false;">Search for church</div></div>
 
         <!-- <%= yield %> -->
 
@@ -69,6 +65,7 @@
           <p><a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" /></a></p></footer></div>
     <script src="//code.jquery.com/jquery-1.7.min.js"></script>
     <script>window.jQuery || document.write('<script src="/javascripts/jquery-1.7.min.js"><\/script>')</script>
-    <script src="/javascripts/application.js"></script>
-  </body>
+    <script src="/javascripts/application.js"></script></body>
 </html>
+
+
